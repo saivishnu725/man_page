@@ -16,7 +16,7 @@ Any Browser
 #
 ## Tribute to the legend Michael Kerrisk
 tried to understand how this Michael guy did the code for [the home page](https://man7.org/index.html) and it is crazzyyy... <br>
-This Youtuber (HyperPlexed)[https://www.youtube.com/@Hyperplexed] is a real game changer. His explanations on how to use Tables is what gave me the idea :) and in a very coincidental way.. My man (Michael) used a similar method...
+This Youtuber [HyperPlexed](https://www.youtube.com/@Hyperplexed) is a real game changer. His explanations on how to use Tables is what gave me the idea :) and in a very coincidental way.. My man (Michael) used a similar method...
 #
 
 ## License
