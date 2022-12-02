@@ -13,7 +13,10 @@ Any Browser
 1. HTML assignment in my college with a 13 days deadline.
 2. I always wanted to do a man page site. I might maybe even add JS to automatically create webpages using given data.
 
-
+#
+## Tribute to the legend Michael Kerrisk
+tried to understand how this Michael guy did the code for [the home page](https://man7.org/index.html) and it is crazzyyy... <br>
+This Youtuber (HyperPlexed)[https://www.youtube.com/@Hyperplexed] is a real game changer. His explanations on how to use Tables is what gave me the idea :) and in a very coincidental way.. My man (Michael) used a similar method...
 #
 
 ## License
