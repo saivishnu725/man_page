@@ -23,6 +23,13 @@ Any Browser
 
 #
 
+## Plans
+
+I am not going to do a complete redo of the man page because I want to think of my college's requirements. I am required to use lists, forms and table.
+I used table to create the home page but i still have to use lists and forms. I am thinking about using lists for the rm page and forms for a _Contact Me_ page. But idk. let's see.
+
+#
+
 ## Tribute to the legend Michael Kerrisk
 
 tried to understand how this Michael guy did the code for [the home page](https://man7.org/index.html) and it is crazzyyy... <br>
