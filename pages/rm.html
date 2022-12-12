@@ -22,11 +22,15 @@
         }
 
         a,
-        a:hover,
         a:focus,
         a:visited {
             text-decoration: none;
             color: #1030ff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
         }
     </style>
 </head>
@@ -51,17 +55,28 @@
             </tbody>
         </table>
     </div>
+    <div style="padding-left: 10px;">
 
-    <h1 style="font-weight: normal; color:#008000;"> rm(1) - Linux manual page</h1>
-    <table>
-        <tr>
-            <td>
-            <th>RM(1)</th>
-            <th>User Commands</th>
-            <th>RM(1)</th>
-            </td>
-        </tr>
-    </table>
+        <h1 style="font-weight: normal; color:#008000;"> rm(1) - Linux manual page</h1>
+        <p style="font-size: large; margin: 15px; margin-left: 0px;">
+            <a href="#name">NAME</a> | <a href="#synopsis">SYNOPSIS</a> | <a href="#description">DESCRIPTION</a> | <a
+                href="#author">AUTHOR</a> | <a href="bugs">REPORTING BUGS</a> | <a href="#copyright">COPYRIGHT</a> | <a
+                href="#see_also">SEE ALSO</a> | <a href="#colophon">COLOPHON</a>
+        </p>
+        <form>
+            <input type="text" name="search">
+            <button type="submit">Search online pages</button>
+        </form>
+        <table style="width: 80%; margin-top: 10px;">
+            <tr>
+                <td>
+                <th>RM(1)</th>
+                <th>User Commands</th>
+                <th>RM(1)</th>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
