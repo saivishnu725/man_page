@@ -65,13 +65,22 @@
             font-style: italic;
             color: #006000;
         }
+
+        .footer {
+            background-color: #e8e8e8;
+            margin-bottom: 0px;
+            font-family: sans-serif;
+        }
+        .footer p{
+            padding: 6px;
+        }
     </style>
 </head>
 
 <body>
 
     <div style="background-color: #e8e8e8; height: 28px; margin-bottom: 20px;">
-        <table style="width: 75%; ">
+        <table style="width: 75%;">
             <tbody>
                 <tr>
                     <td>
@@ -87,25 +96,31 @@
                 </tr>
             </tbody>
         </table>
+        <hr>
     </div>
     <div style="padding-left: 10px;">
 
         <h1 id="top" style="font-weight: normal; color:#008000;"> rm(1) - Linux manual page</h1>
-        <p style="font-size: large; margin: 15px; margin-left: 0px;">
-            <a href="#name">NAME</a> | <a href="#synopsis">SYNOPSIS</a> | <a href="#description">DESCRIPTION</a> | <a
-                href="#options">OPTIONS</a> | <a href="#author">AUTHOR</a> | <a href="bugs">REPORTING BUGS</a> | <a
-                href="#copyright">COPYRIGHT</a> | <a href="#see_also">SEE ALSO</a> | <a href="#colophon">COLOPHON</a>
-        </p>
-        <form>
-            <input type="text" name="search">
-            <button type="submit">Search online pages</button>
-        </form>
-        <table style="width: 80%; margin-top: 20px; margin-bottom: 40px;">
+        <table style="width: 50%;">
             <tr>
                 <td>
-                <th>RM(1)</th>
-                <th>User Commands</th>
-                <th>RM(1)</th>
+                    <p style="font-size: large; margin: 15px; margin-left: 0px;">
+                        <a href="#name">NAME</a> | <a href="#synopsis">SYNOPSIS</a> | <a
+                            href="#description">DESCRIPTION</a> | <a href="#options">OPTIONS</a> | <a
+                            href="#author">AUTHOR</a> | <a href="bugs">REPORTING BUGS</a> | <a
+                            href="#copyright">COPYRIGHT</a> | <a href="#see_also">SEE ALSO</a> | <a
+                            href="#colophon">COLOPHON</a>
+                    </p>
+                    <form>
+                        <input type="text" name="search">
+                        <button type="submit">Search online pages</button>
+                    </form>
+                    <table style="width: 80%; margin-top: 20px; margin-bottom: 40px;">
+                        <tr>
+                            <td>
+                            <th>RM(1)</th>
+                            <th>User Commands</th>
+                            <th>RM(1)</th>
                 </td>
             </tr>
         </table>
@@ -115,18 +130,15 @@
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        rm - remove files or directories
-        </pre>
-
+                    rm - remove files or directories
+                    </pre>
         <h2 class="title synopsis">
             SYNOPSIS
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        <span class="command">rm </span> [<span class="option">OPTION</span>]... [<span class="option">FILE</span>]...
-
-        </pre>
-
+                    <span class="command">rm </span> [<span class="option">OPTION</span>]... [<span class="option">FILE</span>]...
+                    </pre>
         <h2 class="title description">
             DESCRIPTION
             <a class="top-link" href="#top"> top </a>
@@ -134,20 +146,17 @@
         <pre>
         This manual page documents the GNU version of <span class="command">rm</span>.  <span class="command">rm</span> removes
         each specified file.  By default, it does not remove directories.
-     
         If the <span class="option">-I</span> or <span class="option">--interactive=once</span> option is given, and there are
         more than three files or the <span class="option">-r</span>, <span class="option">-R</span>, or <span class="option">--recursive</span> are given,
         then <span class="command">rm</span> prompts the user for whether to proceed with the entire
         operation.  If the response is not affirmative, the entire
         command is aborted.
-     
         Otherwise, if a file is unwritable, standard input is a terminal,
         and the <span class="option">-f</span> or <span class="option">--force</span> option is not given, or the <span class="option">-i</span> or
         <span class="option">--interactive=always</span> option is given, <span class="command">rm</span> prompts the user for
         whether to remove the file.  If the response is not affirmative,
         the file is skipped.
         </pre>
-
         <h2 class="title options">
             OPTIONS
             <a class="top-link" href="#top"> top </a>
@@ -156,123 +165,156 @@
         Remove (unlink) the FILE(s).
 
         <span class="command">-f</span>, <span class="command">--force</span>
-               ignore nonexistent files and arguments, never prompt
-     
+                ignore nonexistent files and arguments, never prompt
+        
         <span class="command">-i</span>
-               prompt before every removal
-     
+                prompt before every removal
+        
         <span class="command">-I</span>     prompt once before removing more than three files, or when
-               removing recursively; less intrusive than -i, while still
-               giving protection against most mistakes
-     
-        <span class="command">--interactive</span>[=<span class="option">WHEN</span>]
-               prompt according to WHEN: never, once (-I), or always
-               (-i); without WHEN, prompt always
-     
-        <span class="command">--one-file-system</span>
-               when removing a hierarchy recursively, skip any directory
-               that is on a file system different from that of the
-               corresponding command line argument
-     
-        <span class="command">--no-preserve-root</span>
-               do not treat '/' specially
-     
-        <span class="command">--preserve-root</span>[=<span class="option">all</span>]
-               do not remove '/' (default); with 'all', reject any
-               command line argument on a separate device from its parent
-     
-        <span class="command">-r</span>, <span class="command">-R</span>, <span class="command">--recursive</span>
-               remove directories and their contents recursively
-     
-        <span class="command">-d</span>, <span class="command">--dir</span>
-               remove empty directories
-     
-        <span class="command">-v</span>, <span class="command">--verbose</span>
-               explain what is being done
-     
-        <span class="command">--help</span> 
-               display this help and exit
-     
-        <span class="command">--version</span>
-               output version information and exit
-     
-        By default, rm does not remove directories.  Use the <span class="command">--recursive</span>
-        (<span class="command">-r</span> or <span class="command">-R</span>) option to remove each listed directory, too, along
-        with all of its contents.
-     
-        To remove a file whose name starts with a '-', for example
-        '-foo', use one of these commands:
-     
-              rm <span class="command">-- -foo</span>
-     
-              rm ./-foo
-     
-        Note that if you use rm to remove a file, it might be possible to
-        recover some of its contents, given sufficient expertise and/or
-        time.  For greater assurance that the contents are truly
-        unrecoverable, consider using shred.
-        </pre>
+                removing recursively; less intrusive than -i, while still
+                giving protection against most mistakes
 
+        <span class="command">--interactive</span>[=<span class="option">WHEN</span>]
+                prompt according to WHEN: never, once (<span class="command">-I</span>), or always
+                (<span class="command">-i</span>); without WHEN, prompt always
+
+        <span class="command">--one-file-system</span>
+                when removing a hierarchy recursively, skip any directory
+                that is on a file system different from that of the
+                corresponding command line argument
+
+        <span class="command">--no-preserve-root</span>
+                do not treat '/' specially
+
+        <span class="command">--preserve-root</span>[=<span class="option">all</span>]
+                do not remove '/' (default); with 'all', reject any
+                command line argument on a separate device from its parent
+                
+        <span class="command">-r</span>, <span class="command">-R</span>, <span class="command">--recursive</span>
+                remove directories and their contents recursively
+
+        <span class="command">-d</span>, <span class="command">--dir</span>
+                remove empty directories
+
+        <span class="command">-v</span>, <span class="command">--verbose</span>
+                explain what is being done
+
+        <span class="command">--help</span>
+                display this help and exit
+
+        <span class="command">--version</span>
+                output version information and exit
+                By default, rm does not remove directories.  Use the <span class="command">--recursive</span>
+                (<span class="command">-r</span> or <span class="command">-R</span>) option to remove each listed directory, too, along
+                with all of its contents.
+                To remove a file whose name starts with a '-', for example
+                '-foo', use one of these commands:
+
+                        rm <span class="command">-- -foo</span>
+                
+                        rm ./-foo
+
+                Note that if you use rm to remove a file, it might be possible to
+                recover some of its contents, given sufficient expertise and/or
+                time.  For greater assurance that the contents are truly
+                unrecoverable, consider using shred.
+         </pre>
         <h2 class="title author">
             AUTHOR
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        Written by Paul Rubin, David MacKenzie, Richard M. Stallman, and
-        Jim Meyering.
+                Written by Paul Rubin, David MacKenzie, Richard M. Stallman, and
+                Jim Meyering.
         </pre>
-
         <h2 class="title bugs">
             REPORTING BUGS
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        GNU coreutils online help:
-        <<a href="https://www.gnu.org/software/coreutils/">https://www.gnu.org/software/coreutils/</a>>
-        Report any translation bugs to
-        <<a href="https://translationproject.org/team/">https://translationproject.org/team/</a>>
+                GNU coreutils online help:
+                <<a href="https://www.gnu.org/software/coreutils/">https://www.gnu.org/software/coreutils/</a>>
+                Report any translation bugs to
+                <<a href="https://translationproject.org/team/">https://translationproject.org/team/</a>>
         </pre>
-
         <h2 class="title copyright">
             COPYRIGHT
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+:
-        GNU GPL version 3 or later <<a href="https://gnu.org/licenses/gpl.html">https://gnu.org/licenses/gpl.html</a>>.
-        This is free software: you are free to change and redistribute
-        it.  There is NO WARRANTY, to the extent permitted by law.
+                Copyright © 2020 Free Software Foundation, Inc.  License GPLv3+:
+                GNU GPL version 3 or later <<a href="https://gnu.org/licenses/gpl.html">https://gnu.org/licenses/gpl.html</a>>.
+                This is free software: you are free to change and redistribute
+                it.  There is NO WARRANTY, to the extent permitted by law.
         </pre>
-
         <h2 class="title see_also">
             SEE ALSO
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        unlink(1), unlink(2), chattr(1), shred(1)
-
-        Full documentation <<a href="https://www.gnu.org/software/coreutils/rm">https://www.gnu.org/software/coreutils/rm</a>>
-        or available locally via: info '(coreutils) rm invocation'
+                unlink(1), unlink(2), chattr(1), shred(1)
+                Full documentation <<a href="https://www.gnu.org/software/coreutils/rm">https://www.gnu.org/software/coreutils/rm</a>>
+                or available locally via: info '(coreutils) rm invocation'
         </pre>
-        </p>
         <h2 class="title colophon">
             COLOPHON
             <a class="top-link" href="#top"> top </a>
         </h2>
         <pre>
-        This page is part of the <span class="option">coreutils</span> (basic file, shell and text
-        manipulation utilities) project.  Information about the project
-        can be found at ⟨<a href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>⟩.  If you
-        have a bug report for this manual page, see
-        ⟨<a href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>⟩.  This page was obtained
-        from the tarball coreutils-8.32.tar.xz fetched from
-        ⟨<a href="http://ftp.gnu.org/gnu/coreutils/">http://ftp.gnu.org/gnu/coreutils/</a>⟩ on 2021-08-27.  If you
-        discover any rendering problems in this HTML version of the page,
-        or you believe there is a better or more up-to-date source for
-        the page, or you have corrections or improvements to the
-        information in this COLOPHON (which is <span class="option">not</span> part of the original
-        manual page), send a mail to man-pages@man7.org
+                This page is part of the <span class="option">coreutils</span> (basic file, shell and text
+                manipulation utilities) project.  Information about the project
+                can be found at ⟨<a href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>⟩.  If you
+                have a bug report for this manual page, see
+                ⟨<a href="http://www.gnu.org/software/coreutils/">http://www.gnu.org/software/coreutils/</a>⟩.  This page was obtained
+                from the tarball coreutils-8.32.tar.xz fetched from
+                ⟨<a href="http://ftp.gnu.org/gnu/coreutils/">http://ftp.gnu.org/gnu/coreutils/</a>⟩ on 2021-08-27.  If you
+                discover any rendering problems in this HTML version of the page,
+                or you believe there is a better or more up-to-date source for
+                the page, or you have corrections or improvements to the
+                information in this COLOPHON (which is <span class="option">not</span> part of the original
+                manual page), send a mail to man-pages@man7.org
         </pre>
+        </p>
+        <table style="width: 70%; margin-top: 10px; margin-bottom: 20px;">
+            <tr>
+                <td>
+                <th>GNU coreutils 8.32</th>
+                <th>March 2020</th>
+                <th>RM(1)</th>
+                </td>
+            </tr>
+        </table>
+        <div style="max-width: 75%;">
+            <hr>
+            <p>
+                Pages that refer to this page: <a href="">rmdir(2)</a>, <a href="">unlink(2)</a>, <a
+                    href="">remove(3)</a>,
+                <a href="">mq_overview(7)</a>, <a href="">symlink(7)</a>, <a href="">debugfs(8)</a>,
+                <a href="">lsof(8)</a>
+            </p>
+            <hr>
+        </div>
+    </div>
+    </td>
+    </tr>
+    </table>
+    <div class="footer">
+        <table style="width: 75%;">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>HTML rendering created 2022-12-12 by <a href="https://saivishnu-portfolio.netlify.app/">Sai
+                                Vishnu M</a>, just a tech, maintainer of nothing -_-</p>
+                        <p>For details of how I created this site, contact me irl :)</p>
+                        <p>Hosting by <a href="https://pages.github.com/">Github Pages</a></p>
+                    </td>
+                    <td>
+                        <img src="https://i.kym-cdn.com/photos/images/original/002/297/355/cb3"
+                                alt="My image" style="width: 35%;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 
