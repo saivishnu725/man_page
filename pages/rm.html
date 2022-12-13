@@ -32,6 +32,39 @@
             text-decoration: underline;
             color: red;
         }
+
+        p .main-text {
+            font-family: monospace;
+            font-size: 18px;
+        }
+
+        pre {
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        .top-link {
+            margin-left: 25px;
+            font-size: 11.2px;
+        }
+
+        .title {
+            font-family: Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #a00;
+        }
+
+        .command {
+            font-weight: 700;
+            color: #502000;
+        }
+
+        .option {
+            font-weight: 400;
+            font-style: italic;
+            color: #006000;
+        }
     </style>
 </head>
 
@@ -57,7 +90,7 @@
     </div>
     <div style="padding-left: 10px;">
 
-        <h1 style="font-weight: normal; color:#008000;"> rm(1) - Linux manual page</h1>
+        <h1 id="top" style="font-weight: normal; color:#008000;"> rm(1) - Linux manual page</h1>
         <p style="font-size: large; margin: 15px; margin-left: 0px;">
             <a href="#name">NAME</a> | <a href="#synopsis">SYNOPSIS</a> | <a href="#description">DESCRIPTION</a> | <a
                 href="#author">AUTHOR</a> | <a href="bugs">REPORTING BUGS</a> | <a href="#copyright">COPYRIGHT</a> | <a
@@ -67,7 +100,7 @@
             <input type="text" name="search">
             <button type="submit">Search online pages</button>
         </form>
-        <table style="width: 80%; margin-top: 10px;">
+        <table style="width: 80%; margin-top: 20px; margin-bottom: 40px;">
             <tr>
                 <td>
                 <th>RM(1)</th>
@@ -76,6 +109,24 @@
                 </td>
             </tr>
         </table>
+        <p class="main-text">
+        <h2 class="title name">
+            NAME
+            <a class="top-link" href="#top"> top </a>
+        </h2>
+        <pre>
+            rm - remove files or directories
+        </pre>
+
+        <h2 class="title synopsis">
+            SYNOPSIS
+            <a class="top-link" href="#top"> top </a>
+        </h2>
+        <pre>
+            <span class="command">rm </span> [<span class="option">OPTION</span>]... [<span class="option">FILE</span>]...
+
+        </pre>
+        </p>
     </div>
 </body>
 
