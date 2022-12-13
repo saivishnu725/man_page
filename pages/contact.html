@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #008000;
+        }
+
+        form * {
+            margin-left: 35%;
+            padding: 5px;
+        }
+
+        input,
+        textarea {
+            padding-left: 15px;
+        }
+
+        label {
+            color: #808080;
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        a {
+            color: #008000;
+            text-decoration: none;
+        }
+
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: #e8e8e8; outline: 20px;">
+        <table style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <a href="https://github.com/saivishnu725">Github</a>
+
+                        </p>
+                    </td>
+                    <td>
+                        <a href="https://saivishnu725.github.io/man_page/"> Man Page </a>
+                    </td>
+                    <td>
+                        <a href="https://saivishnu-portfolio.netlify.app/">My site</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+    <h2>
+        Contact Me
+    </h2>
+    <!-- <center> -->
+    <form action="mailto:saivishnu725@gmail.com">
+        <table>
+            <tr>
+                <td>
+                    <label> Name </label>
+                </td>
+                <td>
+                    <input type="text" name="name" \>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label> Email </label>
+                </td>
+                <td>
+                    <input type="email" name="email" \>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label> Message </label>
+                </td>
+                <td>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td \>
+                <td>
+                    <button type=submit style="margin: 0;"> Submit </button>
+                    <button type=reset style="margin: 10px;"> Reset </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <!-- </center> -->
+    <div style="background-color: #e8e8e8;" id="footer">
+        <!-- <table style="width: 100%; margin-bottom: 20px;">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            Made by Sai Vishnu M.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+        <p>
+            Made by saivishnu© with ♡
+        </p>
+    </div>
+</body>
+
+</html>
